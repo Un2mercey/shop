@@ -1,0 +1,10 @@
+<div class="product-container">
+	<div class = "product-card" *ngFor="let product of randomizeService.products">
+		<div>{{product.id}}</div>
+		<div [ngClass]="{'is-discount': product.discount}">{{product.title}}</div>
+		<img src="{{product.image}}" alt="{{product.title}}" style="height: 100px; width: 100px">
+		<div>{{product.discountPrice | currency}}</div>
+		<div>{{product.category}}</div>
+	</div>
+	<button mat-raised-button color="primary" (click)="openModal()">Open Modal</button>
+</div>

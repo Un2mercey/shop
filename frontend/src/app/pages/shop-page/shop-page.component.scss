@@ -1,0 +1,14 @@
+.product-container {
+	display: inline-flex;
+	align-items: center;
+	width: 100%;
+	flex-wrap: wrap;
+	.product-card {
+		display: flex;
+		flex-direction: column;
+		width: 25%;
+	}
+}
+.is-discount {
+	background: green;
+}
